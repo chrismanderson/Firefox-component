@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://cmap2_getlinks/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://cmap2_getlinks/locale/overlay.dtd">
+<overlay id="cmap2_getlinks-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="ff-overlay.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="cmap2_getlinks-strings" src="chrome://cmap2_getlinks/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+  <toolbarbutton id="cmap2_getlinks-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+    label="&cmap2_getlinksToolbarButton.label;" tooltiptext="&cmap2_getlinksToolbarButton.tooltip;"
+    oncommand="cmap2_getlinks.onToolbarButtonCommand()"/>
+  </toolbarpalette>
+
+
+
+</overlay>

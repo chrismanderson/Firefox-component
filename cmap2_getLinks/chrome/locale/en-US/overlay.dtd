@@ -1,0 +1,8 @@
+<!ENTITY cmap2_getlinks.label "CMAP2 Get Links">
+<!ENTITY cmap2_getlinksContext.label "CMAP2 Get Links">
+<!ENTITY cmap2_getlinksContext.accesskey "Y">
+<!ENTITY cmap2_getlinksToolbarButton.label "CMAP2 Get Links">
+<!ENTITY cmap2_getlinksToolbarButton.tooltip "CMAP2 Get Links">
+<!ENTITY cmap2_getlinksSidebar.label "Your Sidebar">
+<!ENTITY cmap2_getlinksToolbar.name  "example">
+<!ENTITY cmap2_getlinksToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &cmap2_getlinksToolbar.name;">

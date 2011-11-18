@@ -1,0 +1,5 @@
+content   cmap2_getlinks                 chrome/content/
+skin      cmap2_getlinks   classic/1.0   chrome/skin/
+locale    cmap2_getlinks   en-US         chrome/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://cmap2_getlinks/content/ff-overlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://cmap2_getlinks/skin/overlay.css

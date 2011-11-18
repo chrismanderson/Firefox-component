@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window onload="onLoad();" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="alert" title="CMA P2" windowtype="main" orient="vertical" sizemode="normal" width="400" height="200">
+<script><![CDATA[
+	function onLoad() {
+	
+		var numLinks = window.arguments[0];
+		var numImages = window.arguments[1];
+		var result = window.arguments[2];
+	
+		document.getElementById("links").value = numLinks.value;
+		document.getElementById("images").value = numImages.value;
+		
+		if (result == true) {
+			document.getElementById("status").value = "A new file was saved.";
+		}
+		
+		else {
+			document.getElementById("status").value = "File already existed, or there was an error saving the file.";
+		}
+	
+	}
+]]></script>
+<vbox><hbox>
+	<vbox>
+		<label value="Number of links: "/>
+		<label value="Number of images: "/>
+	</vbox>
+	
+	<vbox>	
+		<label id="links" value="Stuff" />
+		<label id="images" value="Stuff" />
+	</vbox>
+</hbox>
+
+
+<hbox>
+	<description value="File status" id="status"/>
+</hbox>	
+
+<button label="Ok" oncommand="close()" />
+</vbox>
+</window>

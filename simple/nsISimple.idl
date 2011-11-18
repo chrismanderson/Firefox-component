@@ -1,0 +1,14 @@
+
+
+// include the classes we reference
+#include "nsISupports.idl"
+#include "nsIDOMDocument.idl"
+
+[scriptable, uuid(80da2600-1511-45e6-a7bb-aecd28b7c146)]
+
+// Declare an interface, nsISimple which inherits from nsISupports only
+interface nsISimple : nsISupports
+{
+  // saves the summary of the current document
+  boolean saveSummary(in nsIDOMDocument doc, out unsigned long numLinks, out unsigned long numImages);
+};
